@@ -1,0 +1,1858 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="node_modules\bootstrap\dist\css\bootstrap.min.css"
+    />
+    <script src="node_modules\bootstrap\dist\js\bootstrap.bundle.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Shojumaru&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Shojumaru&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./vishalstyle.css" />
+    <style>
+      /* --------------------default style start---------------------- */
+      body {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+        font-family: "Roboto", sans-serif;
+      }
+
+      .container {
+        margin: 0px;
+        padding: 0px;
+        max-width: 1320px;
+        margin: auto;
+        background-color: white;
+      }
+      /* /-------------------------default style end------------/ */
+    </style>
+  </head>
+
+  <body>
+    <!-------------------------- This part if for akash ------------------------------>
+    <header>
+      <div id="ak_firstnav">
+        <nav
+          class="navbar navbar-expand-lg bg-body-tertiary bg-dark container gap-0"
+        >
+          <div
+            class="container flex-nowrap border-opacity-10 ak_navbottom pe-2"
+          >
+            <div id="ak_1st">
+              <img src="./images/logo1.png" alt="" />
+              <b>LOG IN | JOIN</b>
+            </div>
+            <div id="ak_2nd">
+              <h1
+                style="font-size: 50px"
+                class="text-white fw-bolder bg-danger"
+              >
+                MOVIEVERSE
+              </h1>
+            </div>
+
+            <div id="ak_firstnav_last">
+              <div id="ak_3rd">
+                <div id="ak_3rd_1st">
+                  <div>
+                    <img src="./images/u_logo.png" alt="" />
+                  </div>
+                  <div>
+                    <h5>MARVEL UNLIMITED</h5>
+                    <h5>SUBSCRIBE</h5>
+                  </div>
+                </div>
+
+                <div id="ak_3rd_2nd">
+                  <img src="./images/search_icon.png" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+
+      <!-- for Smaller screen-->
+      <nav
+        id="smallscreen"
+        class="navbar border-bottom border-body"
+        data-bs-theme="dark"
+      >
+        <div class="container-fluid d-flex justify-content-between">
+          <div>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasTop"
+              aria-controls="offcanvasTop"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div
+              class="offcanvas offcanvas-start"
+              tabindex="-1"
+              id="offcanvasTop"
+              aria-labelledby="offcanvasTopLabel"
+            >
+              <div class="offcanvas-header d-flex flex">
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="offcanvas"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="offcanvas-body">
+                <div class="ak_small">
+                  <div class="ak_small2">
+                    <span>NEWS</span><span>COMICS</span><span>CHARACTERS</span
+                    ><span>MOVIES</span><span>TV SHOWS</span><span>GAMES</span
+                    ><span>VEDIOS</span><span>LIFESTYLE</span
+                    ><span>ROLE-PLAYING GAME</span><span>BOOKS</span
+                    ><span>PODCAST</span><span>SHOP</span>
+                  </div>
+                  <div class="ak_small1"></div>
+                  <div class="ak_small3">
+                    <p>MARVEL INSIDER</p>
+                    <span>LOG IN</span>
+
+                    <span>JOIN</span>
+                  </div>
+
+                  <div class="ak_small1"></div>
+
+                  <div class="ak_small4">
+                    <i class="fab fa-linkedin"></i>
+                    <i class="fab fa-youtube"></i>
+                    <i class="fab fa-pinterest"></i>
+                    <i class="fab fa-snapchat"></i>
+                    <i class="fab fa-tumblr"></i>
+                    <i class="fab fa-reddit"></i>
+                    <i class="fab fa-whatsapp"></i>
+                    <i class="fab fa-telegram"></i>
+                    <i class="fab fa-discord"></i>
+                    <i class="fab fa-twitch"></i>
+                  </div>
+
+                  <div class="ak_small5">
+                    <div>
+                      <img
+                        src="https://cdn.marvel.com/content/1x/mulogo_lob_log_eye_01_1.png"
+                        alt=""
+                      />
+                    </div>
+
+                    <div>
+                      <img src="images/MvV.png" alt="" />
+                    </div>
+                    <div>
+                      <img
+                        src="http://127.0.0.1:5500/images/logo1.png"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div>
+            <h3
+              style="font-size: 50px"
+              class="text-white fw-bolder bg-danger p"
+            >
+              MOVIEVERSE
+            </h3>
+          </div>
+          <div>
+            <img src="./images/search_icon.png" alt="" />
+          </div>
+        </div>
+      </nav>
+
+      <div id="ak_secondnav">
+        <ul class="nav justify-content-center">
+          <li class="nav-item">
+            <a class="nav-link" href="#"
+              ><b>NEWS</b>
+              <div class="large-component">
+                <h6>LATEST NEWS &nbsp;&nbsp; ALL NEWS</h6>
+                <h2>TRENDING NEWS</h2>
+                <div class="ak_trend">
+                  <div class="ak_trend1">
+                    <img
+                      src="https://cdn.marvel.com/content/1x/x-men-97-a-new-age-featurette-article-card.jpg"
+                      alt="logo"
+                    />
+                    <h3>TV SHOWS</h3>
+                    <h4>
+                      Marvel Animation's 'X-Men '97' Releases 'A New Age'
+                      Featurette
+                    </h4>
+                  </div>
+                  <div class="ak_trend1">
+                    <img src="images/x-men_97_1_cover_card.jpg" alt="logo" />
+                    <h3>COMIC</h3>
+                    <h4>March 27's New Marvel Comics: The Full List</h4>
+                  </div>
+                  <div class="ak_trend1">
+                    <img
+                      src="images/marvel-1943-rise-of-hydra-new-story-trailer-article-card.jpg"
+                      alt=""
+                    />
+                    <h3>GAMES</h3>
+                    <h4>
+                      'Marvel 1943: Rise of Hydra' Reveals New Story Trailer
+                    </h4>
+                  </div>
+                  <div class="ak_trend1">
+                    <img
+                      src="images/marvel-rivals-announcement-article-card.jpg"
+                      alt="logo"
+                    />
+                    <h3>GAMES</h3>
+                    <h4>
+                      Marvel Rivals PVP Shooter Boasts Incredible Lineup of
+                      Marvel Characters
+                    </h4>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#"
+              ><b>COMIC</b>
+              <div class="large-component">
+                <!-- <h6>LATEST NEWS &nbsp;&nbsp;  ALL NEWS</h6> -->
+                <h2>LATEST COMICS</h2>
+                <div class="ak_trend">
+                  <div class="ak_trend1">
+                    <img
+                      src="https://cdn.marvel.com/u/prod/marvel/i/mg/c/90/65f9a3a74c9aa/detail.jpg"
+                      alt="logo"
+                    />
+                    <h4>Jackpot & Black Cat (2024) #1</h4>
+                    <h3>2024</h3>
+                  </div>
+                  <div class="ak_trend1">
+                    <img src="images/x-men_97_1_cover_card.jpg" alt="logo" />
+                    <h4>X-Men '97 (2024) #1</h4>
+                    <h3>2024</h3>
+                  </div>
+                  <div class="ak_trend1">
+                    <img
+                      src="https://cdn.marvel.com/u/prod/marvel/i/mg/9/90/65f9a38b0f14e/detail.jpg"
+                      alt=""
+                    />
+                    <h4>Ultimate Spider-Man (2024) #3</h4>
+                    <h3>2024</h3>
+                  </div>
+                  <div class="ak_trend1">
+                    <img
+                      src="https://cdn.marvel.com/u/prod/marvel/i/mg/6/30/65f9a3a5061e2/detail.jpg"
+                      alt="logo"
+                    />
+                    <h4>Rise of the Powers of X (2024) #3</h4>
+                    <h3>2024</h3>
+                  </div>
+
+                  <div class="ak_trend1">
+                    <img
+                      src="https://cdn.marvel.com/u/prod/marvel/i/mg/4/20/65f9a3b157587/detail.jpg"
+                      alt="logo"
+                    />
+                    <h4>G.O.D.S. (2023) #6</h4>
+                    <h3>2024</h3>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#"
+              ><b>CHARACTERS</b>
+              <div class="large-component">
+                <!-- <h6>LATEST NEWS &nbsp;&nbsp;  ALL NEWS</h6> -->
+                <h2>TRENDING IN THE UNIVERSE</h2>
+                <div class="ak_trend">
+                  <div class="ak_trend1">
+                    <img
+                      src="https://cdn.marvel.com/content/1x/058mgn_com_crd_01.jpg"
+                      alt="logo"
+                    />
+                    <h1>MAGNETO</h1>
+                  </div>
+                  <div class="ak_trend1">
+                    <img
+                      src="https://cdn.marvel.com/content/1x/191cyc_com_crd_01.png"
+                      alt="logo"
+                    />
+                    <h1>CYCLOPS</h1>
+                  </div>
+
+                  <div class="ak_trend1">
+                    <img
+                      src="https://cdn.marvel.com/content/1x/jeangrey442.jpg"
+                      alt=""
+                    />
+                    <h1>PHOENIX</h1>
+                  </div>
+                  <div class="ak_trend1">
+                    <img
+                      src="https://cdn.marvel.com/content/1x/034wlv_com_crd_01.jpg"
+                      alt="logo"
+                    />
+                    <h1>WOLVERINE</h1>
+                  </div>
+
+                  <div class="ak_trend1">
+                    <img
+                      src="https://cdn.marvel.com/content/1x/039stm_com_crd_01.jpg"
+                      alt="logo"
+                    />
+                    <h1>STORM</h1>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#"
+              ><b>MOVIES</b>
+              <div class="large-component">
+                <!-- <h6>LATEST NEWS &nbsp;&nbsp;  ALL NEWS</h6> -->
+                <h2>MOVIES</h2>
+                <div class="ak_trend">
+                  <div class="ak_trend1">
+                    <img
+                      src="https://cdn.marvel.com/content/1x/doctorstrangeinthemultiverseofmadness_lob_crd_02_3.jpg"
+                      alt="logo"
+                    />
+                    <h4>Doctor Strange in the Multiverse of Madness</h4>
+                    <h3>2022</h3>
+                  </div>
+                  <div class="ak_trend1">
+                    <img
+                      src="https://cdn.marvel.com/content/1x/eternals_lob_crd_06.jpg"
+                      alt="logo"
+                    />
+                    <h4>Eternals</h4>
+                    <h3>2021</h3>
+                  </div>
+                  <div class="ak_trend1">
+                    <img
+                      src="https://cdn.marvel.com/content/1x/avengersinfinitywar_lob_crd_02_1.jpg"
+                      alt=""
+                    />
+                    <h4>Avengers: Infinity War</h4>
+                    <h3>2018</h3>
+                  </div>
+                  <div class="ak_trend1">
+                    <img
+                      src="https://cdn.marvel.com/content/1x/thorragnarok_lob_crd_03.jpg"
+                      alt="logo"
+                    />
+                    <h4>Thor: Ragnarok</h4>
+                    <h3>2017</h3>
+                  </div>
+
+                  <div class="ak_trend1">
+                    <img
+                      src="https://cdn.marvel.com/content/1x/venom_lob_crd_01.jpg"
+                      alt="logo"
+                    />
+                    <h4>VENOM</h4>
+                    <h3>2018</h3>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#"
+              ><b>TV SHOWS</b>
+              <div class="large-component">
+                <!-- <h6>LATEST NEWS &nbsp;&nbsp;  ALL NEWS</h6> -->
+                <h2>TV SHOWS</h2>
+                <div class="ak_trend">
+                  <div class="ak_trend1">
+                    <img
+                      src="https://cdn.marvel.com/content/1x/wandavision_lob_crd_06.jpg"
+                      alt="logo"
+                    />
+                    <h4>WandaVision</h4>
+                    <h3>2021</h3>
+                  </div>
+                  <div class="ak_trend1">
+                    <img
+                      src="https://cdn.marvel.com/content/1x/loki_lob_crd_04.jpg"
+                      alt="logo"
+                    />
+                    <h4>LOKI</h4>
+                    <h3>2021</h3>
+                  </div>
+                  <div class="ak_trend1">
+                    <img
+                      src="https://cdn.marvel.com/content/1x/moonknight_lob_crd_05.jpg"
+                      alt=""
+                    />
+                    <h4>MOON NIGHT</h4>
+                    <h3>2022</h3>
+                  </div>
+                  <div class="ak_trend1">
+                    <img
+                      src="https://cdn.marvel.com/content/1x/echo_lob_crd_02.jpg"
+                      alt="logo"
+                    />
+                    <h4>ECHOS</h4>
+                    <h3>2024</h3>
+                  </div>
+
+                  <div class="ak_trend1">
+                    <img
+                      src="https://cdn.marvel.com/content/1x/ironheart_lob_crd_02.jpg"
+                      alt="logo"
+                    />
+                    <h4>IronHeart</h4>
+                    <h3>2025</h3>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#"
+              ><b>GAMES</b>
+              <div class="large-component">
+                <!-- <h6>LATEST NEWS &nbsp;&nbsp;  ALL NEWS</h6> -->
+                <h2>GAMES</h2>
+                <div class="ak_trend">
+                  <div class="ak_trend1">
+                    <img
+                      src="https://cdn.marvel.com/content/1x/marvel1943riseofhydra_lob_crd_01.jpg"
+                      alt="logo"
+                    />
+                    <h4>Marvels 1943</h4>
+                    <h3>2025</h3>
+                  </div>
+                  <div class="ak_trend1">
+                    <img
+                      src="https://cdn.marvel.com/content/1x/marvelsspiderman2_lob_crd_02.jpg"
+                      alt="logo"
+                    />
+                    <h4>Spider-Man 2</h4>
+                    <h3>2023</h3>
+                  </div>
+                  <div class="ak_trend1">
+                    <img
+                      src="https://cdn.marvel.com/content/1x/marvelsmidnightsuns_lob_crd_03.jpg"
+                      alt=""
+                    />
+                    <h4>MidNight Suns</h4>
+                    <h3>2022</h3>
+                  </div>
+                  <div class="ak_trend1">
+                    <img
+                      src="https://cdn.marvel.com/content/1x/marvelsnap_lob_crd_01.png"
+                      alt="logo"
+                    />
+                    <h4>Marvel Snap</h4>
+                    <h3>2022</h3>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#"
+              ><b>VIDEOS</b>
+              <div class="large-component">
+                <!-- <h6>LATEST VEDIOS &nbsp;&nbsp;  ALL NEWS</h6> -->
+                <h2>TRENDING VEDIOS</h2>
+                <div class="ak_trend">
+                  <div class="ak_trend1">
+                    <img
+                      src="https://cdn.marvel.com/content/1x/x-men-97-a-new-age-featurette-article-card.jpg"
+                      alt="logo"
+                    />
+                    <h3>TV SHOWS</h3>
+                    <h4>
+                      Marvel Animation's 'X-Men '97' Releases 'A New Age'
+                      Featurette
+                    </h4>
+                  </div>
+                  <div class="ak_trend1">
+                    <img src="images/x-men_97_1_cover_card.jpg" alt="logo" />
+                    <h3>COMIC</h3>
+                    <h4>March 27's New Marvel Comics: The Full List</h4>
+                  </div>
+                  <div class="ak_trend1">
+                    <img
+                      src="images/marvel-1943-rise-of-hydra-new-story-trailer-article-card.jpg"
+                      alt=""
+                    />
+                    <h3>GAMES</h3>
+                    <h4>
+                      'Marvel 1943: Rise of Hydra' Reveals New Story Trailer
+                    </h4>
+                  </div>
+                  <div class="ak_trend1">
+                    <img
+                      src="images/marvel-rivals-announcement-article-card.jpg"
+                      alt="logo"
+                    />
+                    <h3>GAMES</h3>
+                    <h4>
+                      Marvel Rivals PVP Shooter Boasts Incredible Lineup of
+                      Marvel Characters
+                    </h4>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#"
+              ><b>MORE</b>
+              <div class="large-component">
+                <!-- <h6>LATEST NEWS &nbsp;&nbsp;  ALL NEWS</h6> -->
+                <h2>MORE SHOWS</h2>
+                <div class="ak_trend">
+                  <div class="ak_trend1">
+                    <img
+                      src="https://cdn.marvel.com/content/1x/wandavision_lob_crd_06.jpg"
+                      alt="logo"
+                    />
+                    <h4>WandaVision</h4>
+                    <h3>2021</h3>
+                  </div>
+                  <div class="ak_trend1">
+                    <img
+                      src="https://cdn.marvel.com/content/1x/loki_lob_crd_04.jpg"
+                      alt="logo"
+                    />
+                    <h4>LOKI</h4>
+                    <h3>2021</h3>
+                  </div>
+                  <div class="ak_trend1">
+                    <img
+                      src="https://cdn.marvel.com/content/1x/moonknight_lob_crd_05.jpg"
+                      alt=""
+                    />
+                    <h4>MOON NIGHT</h4>
+                    <h3>2022</h3>
+                  </div>
+                  <div class="ak_trend1">
+                    <img
+                      src="https://cdn.marvel.com/content/1x/echo_lob_crd_02.jpg"
+                      alt="logo"
+                    />
+                    <h4>ECHOS</h4>
+                    <h3>2024</h3>
+                  </div>
+
+                  <div class="ak_trend1">
+                    <img
+                      src="https://cdn.marvel.com/content/1x/ironheart_lob_crd_02.jpg"
+                      alt="logo"
+                    />
+                    <h4>IronHeart</h4>
+                    <h3>2025</h3>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div id="ak_thirdnav">
+        <p>STREAM X-MEN '97 EXCLUSIVELY ON</p>
+        <img src="./images/disneybtn_asset2x_2024.png" alt="" />
+      </div>
+
+      <div class="ak_images-container">
+        <div
+          id="carouselExampleInterval"
+          class="carousel slide"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-inner">
+            <div class="carousel-item bg-dark active" data-bs-interval="1800">
+              <img
+                src="https://c4.wallpaperflare.com/wallpaper/240/811/762/wolverine-cyclops-beast-henry-mccoy-ororo-monroe-wallpaper-preview.jpg"
+                class="d-block w-100 carousel-img"
+                alt="X-men"
+              />
+              <div class="ak_text container">
+                <h1>NOW STREAMING ON DISNEY+</h1>
+                <p>
+                  A band of mutants use their uncanny abilities to protect a
+                  world that hates and fears them.
+                </p>
+                <button>WATCH NOW</button>&nbsp;&nbsp;<button>
+                  WELCOME MUTANTS
+                </button>
+              </div>
+              <!-- bottom -->
+              <div class="carousal-btm">
+                <h1>NOW STREAMING ON DISNEY+</h1>
+                <p>
+                  A band of mutants use their uncanny abilities to protect a
+                  world that hates and fears them.
+                </p>
+                <button>WATCH NOW</button>&nbsp;&nbsp;<button>
+                  WELCOME MUTANTS
+                </button>
+              </div>
+            </div>
+            <div class="carousel-item bg-dark" data-bs-interval="1800">
+              <img
+                src="https://cdn.marvel.com/content/1x/gdc_p_03_a_4k_3_7_new_per80.jpg"
+                class="d-block w-100 carousel-img"
+                alt="Hydra"
+              />
+
+              <div class="ak_text container" style="top: 73%">
+                <button>WATCH NOW</button> &nbsp;&nbsp;
+                <button>MEET THE CAST</button>
+              </div>
+              <!-- bottom -->
+              <div class="carousal-btm" style="top: 73%">
+                <button>WATCH NOW</button> &nbsp;&nbsp;
+                <button>MEET THE CAST</button>
+              </div>
+            </div>
+            <div class="carousel-item bg-dark" data-bs-interval="1800">
+              <img
+                src="https://c4.wallpaperflare.com/wallpaper/518/327/589/dual-monitors-multiple-display-x-men-marvel-comics-wallpaper-preview.jpg"
+                class="d-block w-100 carousel-img"
+                alt="comic"
+              />
+
+              <div class="ak_text container">
+                <h1>THIS WEEK'S NEW COMICS</h1>
+                <p>
+                  Return to '90s X-Men,meet the Ultimate Universe's Green
+                  Goblin,team up with Jackpot and Black Cat,and more in this
+                  week's comics!
+                </p>
+                <button>READ MORE</button>
+              </div>
+              <!-- bottom -->
+              <div class="carousal-btm">
+                <h1>THIS WEEK'S NEW COMICS</h1>
+                <p>
+                  Return to '90s X-Men,meet the Ultimate Universe's Green
+                  Goblin,team up with Jackpot and Black Cat,and more in this
+                  week's comics!
+                </p>
+                <button>READ MORE</button>
+              </div>
+            </div>
+            <div class="carousel-item bg-dark" data-bs-interval="1800">
+              <img
+                src="https://c4.wallpaperflare.com/wallpaper/801/877/284/legion-fx-marvel-comics-tv-x-men-wallpaper-preview.jpg"
+                class="d-block w-100 carousel-img"
+                alt="Comic"
+              />
+              <div class="ak_text container">
+                <h1>READ 100+ COMICS FOR FREE</h1>
+                <p>
+                  Start Scrolling with Marvel's Infinity Comics! Experience
+                  bingeable Marvel stories in a mobile first design. Get started
+                  with over 100 free issues to read below.
+                </p>
+                <button>START READING NOW</button>
+              </div>
+              <!-- bottom -->
+              <div class="carousal-btm">
+                <h1>READ 100+ COMICS FOR FREE</h1>
+                <p>
+                  Start Scrolling with Marvel's Infinity Comics! Experience
+                  bingeable Marvel stories in a mobile first design. Get started
+                  with over 100 free issues to read below.
+                </p>
+                <button>START READING NOW</button>
+              </div>
+            </div>
+            <div class="carousel-item bg-dark" data-bs-interval="1800">
+              <img
+                src="https://cdn.marvel.com/content/1x/marvelrivals_lob_mas_dsk_01.jpg"
+                class="d-block w-100 carousel-img"
+                alt="MARVELS"
+              />
+
+              <div class="ak_text container">
+                <h1 style="color: black">
+                  'MARVEL RIVALS' UNVEILS ANNOUNCE TRAILER
+                </h1>
+                <p style="color: black">
+                  Black Panther, Spider-Man, Magneto, Rocket Raccoon, Iron Man
+                  and so many more playable characters join the new,
+                  free-to-play game just announced by NetEase Games and Marvel
+                  Games!
+                </p>
+                <button style="color: black">WATCH TRAILER</button>
+              </div>
+              <!-- bottom -->
+              <div class="carousal-btm">
+                <h1>'MARVEL RIVALS' UNVEILS ANNOUNCE TRAILER</h1>
+                <p>
+                  Black Panther, Spider-Man, Magneto, Rocket Raccoon, Iron Man
+                  and so many more playable characters join the new,
+                  free-to-play game just announced by NetEase Games and Marvel
+                  Games!
+                </p>
+                <button>WATCH TRAILER</button>
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselExampleInterval"
+              data-bs-slide="prev"
+            >
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselExampleInterval"
+              data-bs-slide="next"
+            >
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="ak_text-2">
+        <div class="ak_links" id="ak_links">
+          <div>X-Men '97 Now <br />Streaming On Disney+</div>
+
+          <div>'Marvels 1943: Rise Of <br />Hydra' Trailer</div>
+          <div>
+            This Week's New <br />
+            Comics
+          </div>
+          <div>Free Infinite Comics</div>
+          <div>
+            'Marvels Rivals' <br />
+            Announcement Trailer
+          </div>
+        </div>
+        <span style="color: #8e9098; font-weight: 700">FOLLOW</span>
+        <div class="ak_icons">
+          <i class="fa-brands fa-facebook"></i>
+          <i class="fa-brands fa-twitter"></i>
+          <i class="fa-brands fa-instagram"></i>
+          <i class="fab fa-youtube"></i>
+          <i class="fab fa-pinterest"></i>
+          <i class="fab fa-snapchat"></i>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-------------------------- This part if for syed Taqi ------------------------------>
+      <section class="ST-background1">
+        <div class="content-div">
+          <div>
+            <img src="./images/MvV.png" alt="logo" />
+            <p>available now</p>
+            <h2>new on movieverse</h2>
+            <p>Read these plus 30,000+ digital comics for $9.99 a month!</p>
+            <button id="ST_btn1" class="fw-bold">
+              get movieverse unlimited
+            </button>
+          </div>
+        </div>
+        <div class="image-div"></div>
+      </section>
+
+      <section class="ST-background2">
+        <div class="container">
+          <div id="carouselExample" class="carousel slide">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="ST_cardContainer p-3">
+                  <div class="card" style="width: 18rem">
+                    <img
+                      src="https://cdn.marvel.com/u/prod/marvel/i/mg/f/03/6596e12f09391/portrait_uncanny.jpg"
+                      class="card-img-top"
+                      alt="img"
+                    />
+                    <div class="card-body">
+                      <h4 class="card-title">Daredevil: Gang War (2023) #2</h4>
+                    </div>
+                    <p>2024</p>
+                  </div>
+
+                  <div class="card" style="width: 18rem">
+                    <img
+                      src="https://cdn.marvel.com/u/prod/marvel/i/mg/3/f0/6596e1192e54d/detail.jpg"
+                      class="card-img-top"
+                      alt="img"
+                    />
+                    <div class="card-body">
+                      <h4 class="card-title">Luke Cage: Gang War (2023) #3</h4>
+                    </div>
+                    <p>2024</p>
+                  </div>
+
+                  <div class="card" style="width: 18rem">
+                    <img
+                      src="https://cdn.marvel.com/u/prod/marvel/i/mg/9/03/6596e1176504a/detail.jpg"
+                      class="card-img-top"
+                      alt="img"
+                    />
+                    <div class="card-body">
+                      <h4 class="card-title">Miles Morales (2022) #15</h4>
+                    </div>
+                    <p>2024</p>
+                  </div>
+
+                  <div class="card" style="width: 18rem">
+                    <img
+                      src="https://cdn.marvel.com/u/prod/marvel/i/mg/9/50/65a93b0ef19c2/detail.jpg"
+                      class="card-img-top"
+                      alt="img"
+                    />
+                    <div class="card-body">
+                      <h4 class="card-title">Spider-Woman (2023) #3</h4>
+                    </div>
+                    <p>2024</p>
+                  </div>
+
+                  <div class="card" style="width: 18rem">
+                    <img
+                      src="https://cdn.marvel.com/u/prod/marvel/i/mg/f/a0/65b2c8df2f3ee/detail.jpg"
+                      class="card-img-top"
+                      alt="img"
+                    />
+                    <div class="card-body">
+                      <h4 class="card-title">
+                        Deadly Hands of Kung Fu:(2023) #2
+                      </h4>
+                    </div>
+                    <p>2024</p>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="ST_cardContainer p-3">
+                  <div class="card" style="width: 18rem">
+                    <img
+                      src="https://cdn.marvel.com/u/prod/marvel/i/mg/f/e0/65b7df4aebc97/detail.jpg"
+                      class="card-img-top"
+                      alt="img"
+                    />
+                    <div class="card-body">
+                      <h4 class="card-title">Amazing Spider-Man (2022) #43</h4>
+                    </div>
+                    <p>2024</p>
+                  </div>
+
+                  <div class="card" style="width: 18rem">
+                    <img
+                      src="https://cdn.marvel.com/u/prod/marvel/i/mg/c/80/65b7df6b805ca/detail.jpg"
+                      class="card-img-top"
+                      alt="img"
+                    />
+                    <div class="card-body">
+                      <h4 class="card-title">Spider-Man (2022) #16</h4>
+                    </div>
+                    <p>2024</p>
+                  </div>
+
+                  <div class="card" style="width: 18rem">
+                    <img
+                      src="https://cdn.marvel.com/u/prod/marvel/i/mg/0/04/65cccf978dca5/detail.jpg"
+                      class="card-img-top"
+                      alt="img"
+                    />
+                    <div class="card-body">
+                      <h4 class="card-title">Spider-Woman (2023) #4</h4>
+                    </div>
+                    <p>2024</p>
+                  </div>
+
+                  <div class="card" style="width: 18rem">
+                    <img
+                      src="https://cdn.marvel.com/u/prod/marvel/i/mg/6/90/65ca4d6b38185/detail.jpg"
+                      class="card-img-top"
+                      alt="img"
+                    />
+                    <div class="card-body">
+                      <h4 class="card-title">Amazing Spider-Man (2022) #44</h4>
+                    </div>
+                    <p>2024</p>
+                  </div>
+
+                  <div class="card" style="width: 18rem">
+                    <img
+                      src="https://cdn.marvel.com/u/prod/marvel/i/mg/6/60/65b7d7b21328d/detail.jpg"
+                      class="card-img-top"
+                      alt="img"
+                    />
+                    <div class="card-body">
+                      <h4 class="card-title">Daredevil: Gang War (2023) #3</h4>
+                    </div>
+                    <p>2024</p>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="ST_cardContainer p-3">
+                  <div class="card" style="width: 18rem">
+                    <img
+                      src="https://cdn.marvel.com/u/prod/marvel/i/mg/3/f0/6596e209af427/detail.jpg"
+                      class="card-img-top"
+                      alt="img"
+                    />
+                    <div class="card-body">
+                      <h4 class="card-title">ORIGINAL X-MEN (2023) #1</h4>
+                    </div>
+                    <p>2024</p>
+                  </div>
+
+                  <div class="card" style="width: 18rem">
+                    <img
+                      src="https://cdn.marvel.com/u/prod/marvel/i/mg/9/80/657a24de3f3a8/detail.jpg"
+                      class="card-img-top"
+                      alt="img"
+                    />
+                    <div class="card-body">
+                      <h4 class="card-title">G.O.D.S. (2023) #3</h4>
+                    </div>
+                    <p>2024</p>
+                  </div>
+
+                  <div class="card" style="width: 18rem">
+                    <img
+                      src="https://cdn.marvel.com/u/prod/marvel/i/mg/6/e0/6596e1d6da356/detail.jpg"
+                      class="card-img-top"
+                      alt="img"
+                    />
+                    <div class="card-body">
+                      <h4 class="card-title">Uncanny Spider-Man (2023) #5</h4>
+                    </div>
+                    <p>2023</p>
+                  </div>
+
+                  <div class="card" style="width: 18rem">
+                    <img
+                      src="https://cdn.marvel.com/u/prod/marvel/i/mg/6/90/6596e22c1f26c/detail.jpg"
+                      class="card-img-top"
+                      alt="img"
+                    />
+                    <div class="card-body">
+                      <h4 class="card-title">Astonishing Iceman (2023) #5</h4>
+                    </div>
+                    <p>2023</p>
+                  </div>
+
+                  <div class="card" style="width: 18rem">
+                    <img
+                      src="https://cdn.marvel.com/u/prod/marvel/i/mg/9/60/6596e1ea2b3d4/detail.jpg"
+                      class="card-img-top"
+                      alt="img"
+                    />
+                    <div class="card-body">
+                      <h4 class="card-title">Uncanny Avengers (2023) #5</h4>
+                    </div>
+                    <p>2023</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselExample"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselExample"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </section>
+      <!-------------------------- This part if for sunny ------------------------------>
+      <section id="sk">
+        <div class="container">
+          <div class="mt-5 mb-5 p-2 d-lg-flex gap-5 justify-content-center">
+            <div id="latest" class="text-wrap p-2 mb-2">
+              <h2 class="divider">THE LATEST</h2>
+              <div
+                class="l-cards py-3 border-bottom border-secondary-subtle d-sm-flex justify-content-between gap-4"
+              >
+                <div>
+                  <img
+                    src="https://cdn.marvel.com/content/1x/pryorcard.jpg"
+                    alt=""
+                  />
+                </div>
+                <div>
+                  <h5 class="p-2">COMICS</h5>
+                  <p class="p-2 hover">
+                    Meet Madelyne, the X-Men's Most Dangerous Clone
+                  </p>
+                  <p class="launch-time p-2">5 hours ago</p>
+                </div>
+              </div>
+              <div
+                class="l-cards py-3 border-bottom border-secondary-subtle d-sm-flex justify-content-between gap-4"
+              >
+                <div>
+                  <img
+                    src="https://cdn.marvel.com/content/1x/amazing_spider-man_43_cover_card_2.jpg"
+                    alt=""
+                  />
+                </div>
+                <div>
+                  <h5 class="p-2">COMICS</h5>
+                  <p class="p-2 hover">
+                    'Amazing Spider-Man: Gang War' Descends on Marvel Unlimited
+                  </p>
+                  <p class="launch-time p-2">11 hours ago</p>
+                </div>
+              </div>
+              <div
+                class="l-cards py-3 border-bottom border-secondary-subtle d-sm-flex justify-content-between gap-4"
+              >
+                <div>
+                  <img
+                    src="	https://cdn.marvel.com/content/1x/skottie_young_big_marvel_poster_card.jpg"
+                    alt=""
+                  />
+                </div>
+                <div>
+                  <h5 class="p-2">COMICS</h5>
+                  <p class="p-2 hover">
+                    Celebrate Skottie Young's Big Impact on Marvel Comics with
+                    New Variant Covers [&] More
+                  </p>
+                  <p class="launch-time p-2">1 day ago</p>
+                </div>
+              </div>
+              <div
+                class="l-cards py-3 border-bottom border-secondary-subtle d-sm-flex justify-content-between gap-4"
+              >
+                <div>
+                  <img
+                    src="https://cdn.marvel.com/content/1x/marvel-rivals-announcement-article-card.jpg"
+                    alt=""
+                  />
+                </div>
+                <div>
+                  <h5 class="p-2">GAMES</h5>
+                  <p class="p-2 hover">
+                    Marvel Rivals PVP Shooter Boasts Incredible Lineup of Marvel
+                    Characters
+                  </p>
+                  <p class="launch-time p-2">2 days ago</p>
+                </div>
+              </div>
+              <div
+                class="l-cards py-3 border-bottom border-secondary-subtle d-sm-flex justify-content-between gap-4"
+              >
+                <div>
+                  <img
+                    src="https://cdn.marvel.com/content/1x/ultimate_spider-man_1_cover_card.jpg"
+                    alt=""
+                  />
+                </div>
+                <div>
+                  <h5 class="p-2">COMICS</h5>
+                  <p class="p-2 hover">
+                    'Ultimate Spider-Man' #1 Returns to Shops with a Fifth
+                    Printing
+                  </p>
+                  <p class="launch-time p-2">3 days ago</p>
+                </div>
+              </div>
+              <div
+                class="l-cards py-3 border-bottom border-secondary-subtle d-sm-flex justify-content-between gap-4"
+              >
+                <div>
+                  <img
+                    src="https://cdn.marvel.com/content/1x/x-men_97_1_cover_card.jpg"
+                    alt=""
+                  />
+                </div>
+                <div>
+                  <h5 class="p-2">COMICS</h5>
+                  <p class="p-2 hover">March 27's New Marvel Comics: The Full List</p>
+                  <p class="launch-time p-2">4 days ago</p>
+                </div>
+              </div>
+              <div
+                class="l-cards py-3 border-bottom border-secondary-subtle d-sm-flex justify-content-between gap-4"
+              >
+                <div>
+                  <img
+                    src="https://cdn.marvel.com/content/1x/x-men_forever_2_card.jpg"
+                    alt=""
+                  />
+                </div>
+                <div>
+                  <h5 class="p-2">COMICS</h5>
+                  <p class="p-2 hover">
+                    'X-Men: Forever' #2 First Look Burns for Jean Grey
+                  </p>
+                  <p class="launch-time p-2">4 days ago</p>
+                </div>
+              </div>
+              <div
+                class="l-cards py-3 border-bottom border-secondary-subtle d-sm-flex justify-content-between gap-4"
+              >
+                <div>
+                  <img
+                    src="https://cdn.marvel.com/content/1x/venom_2022_18_card.jpg"
+                    alt=""
+                  />
+                </div>
+                <div>
+                  <h5 class="p-2">COMICS</h5>
+                  <p class="p-2 hover">
+                    Meet Dylan Brock, the Semi-Symbiote Son of Venom
+                  </p>
+                  <p class="launch-time p-2">5 days ago</p>
+                </div>
+              </div>
+              <div class="text-center my-3">
+                <button class="p-2 SK_btn fw-bold">LOAD MORE</button>
+              </div>
+            </div>
+            <div id="hypebox" class="text-wrap p-2 mt-1">
+              <h2 class="fs-4 fw-bold text-center divider">THE HYPE BOX</h2>
+              <p class="fs-6 fw-normal text-center text-wrap">
+                Can’t-miss news and updates from across the Marvel Universe!
+              </p>
+              <div
+                class="h-cards py-4 border-bottom border-top border-secondary-subtle d-flex gap-3 justify-content-between"
+              >
+                <div>
+                  <img
+                    src="https://cdn.marvel.com/content/1x/marvel-1943-rise-of-hydra-new-story-trailer-article-card.jpg"
+                    alt=""
+                  />
+                </div>
+                <div>
+                  <h5>GAMES</h5>
+                  <p class="hover">'Marvel 1943: Rise of Hydra' Reveals New Story Trailer</p>
+                </div>
+              </div>
+              <div
+                class="h-cards py-4 border-bottom border-secondary-subtle d-flex gap-3 justify-content-between"
+              >
+                <div>
+                  <img
+                    src="https://cdn.marvel.com/content/1x/x-men_97_1_cover_card.jpg"
+                    alt=""
+                  />
+                </div>
+                <div>
+                  <h5>COMICS</h5>
+                  <p class="hover">March 27's New Marvel Comics: The Full List</p>
+                </div>
+              </div>
+              <div
+                class="h-cards py-4 border-bottom border-secondary-subtle d-flex gap-3 justify-content-between"
+              >
+                <div>
+                  <img
+                    src="https://cdn.marvel.com/content/1x/marvel-rivals-announcement-article-card.jpg"
+                    alt=""
+                  />
+                </div>
+                <div>
+                  <h5>GAMES</h5>
+                  <p class="hover">
+                    Marvel Rivals PVP Shooter Boasts Incredible Lineup of Marvel
+                    Characters
+                  </p>
+                </div>
+              </div>
+              <div
+                class="h-cards py-4 border-bottom border-secondary-subtle d-flex gap-3 justify-content-between"
+              >
+                <div>
+                  <img
+                    src="https://cdn.marvel.com/content/1x/x-men-97-a-new-age-featurette-article-card.jpg"
+                    alt=""
+                  />
+                </div>
+                <div>
+                  <h5>TV SHOWs</h5>
+                  <p class="hover">
+                    Marvel Animation's 'X-Men '97' Releases 'A New Age'
+                    Featurette
+                  </p>
+                </div>
+              </div>
+              <div class="h-cards py-4 d-flex gap-3 justify-content-between">
+                <div>
+                  <img
+                    src="https://cdn.marvel.com/content/1x/1560x876-b.jpg"
+                    alt=""
+                  />
+                </div>
+                <div>
+                  <h5>COMICS</h5>
+                  <p class="hover">
+                    Marvel Unlimited Launches New Program That Offers Access to
+                    Infinity Comics for Free
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-------------------------- This part if for Rajat ------------------------------>
+      <section id="rs">
+        <div class="container">
+          <div class="rs-container">
+            <div class="rs-box1">
+              <iframe
+                class="i1"
+                src="https://assets.espn.go.com/players/web-player-bundle/next/embed/share.html#id=6345958138112&brand=marvel"
+                width="840"
+                height="560"
+                scrolling="no"
+                allowfullscreen
+                frameborder="0"
+              ></iframe
+              >`
+
+              <div class="rs-box14">
+                <h6>TRAILERS & EXTRAS</h6>
+                <h4>The Marvels | Behind the Powers of The Marvels</h4>
+                <p>
+                  Get an inside look at Captain Marvel, Ms. Marvel, and Monica
+                  Rambeau’s powers with VFX Supervisor Tara DeMarco. Marvel
+                  Studios’ The Marvels is now streaming on Disney+.
+                </p>
+              </div>
+            </div>
+
+            <div class="rs-box2">
+              <div class="rs-box3">
+                <iframe
+                  class="i2"
+                  src="https://assets.espn.go.com/players/web-player-bundle/next/embed/share.html#id=6345958138112&brand=marvel"
+                  width="640"
+                  height="360"
+                  scrolling="no"
+                  allowfullscreen
+                  frameborder="0"
+                >
+                </iframe
+                >`
+              </div>
+              <div class="rs-box4">
+                <iframe
+                  class="i3"
+                  src="https://assets.espn.go.com/players/web-player-bundle/next/embed/share.html#id=6345957963112&brand=marvel"
+                  width="640"
+                  height="360"
+                  scrolling="no"
+                  allowfullscreen
+                  frameborder="0"
+                >
+                </iframe
+                >`
+              </div>
+              <div class="rs-box5">
+                <iframe
+                  class="i4"
+                  src="https://assets.espn.go.com/players/web-player-bundle/next/embed/share.html#id=6346023155112&brand=marvel"
+                  width="640"
+                  height="360"
+                  scrolling="no"
+                  allowfullscreen
+                  frameborder="0"
+                >
+                </iframe
+                >`
+              </div>
+              <div class="rs-box6">
+                <iframe
+                  class="i5"
+                  src="https://assets.espn.go.com/players/web-player-bundle/next/embed/share.html#id=6345875842112&brand=marvel"
+                  width="640"
+                  height="360"
+                  scrolling="no"
+                  allowfullscreen
+                  frameborder="0"
+                >
+                </iframe
+                >`
+              </div>
+              <div class="rs-box7">
+                <iframe
+                  class="i6"
+                  src="https://assets.espn.go.com/players/web-player-bundle/next/embed/share.html#id=6345662011112&brand=marvel"
+                  width="640"
+                  height="360"
+                  scrolling="no"
+                  allowfullscreen
+                  frameborder="0"
+                >
+                </iframe
+                >`
+              </div>
+              <div class="rs-box8">
+                <iframe
+                  class="i7"
+                  src="https://assets.espn.go.com/players/web-player-bundle/next/embed/share.html#id=6345356835112&brand=marvel"
+                  width="640"
+                  height="360"
+                  scrolling="no"
+                  allowfullscreen
+                  frameborder="0"
+                >
+                </iframe
+                >`
+              </div>
+              <div class="rs-box9">
+                <iframe
+                  class="i8"
+                  src="https://assets.espn.go.com/players/web-player-bundle/next/embed/share.html#id=6345198134112&brand=marvel"
+                  width="640"
+                  height="360"
+                  scrolling="no"
+                  allowfullscreen
+                  frameborder="0"
+                >
+                </iframe
+                >`
+              </div>
+              <div class="rs-box10">
+                <iframe
+                  class="i9"
+                  src="https://assets.espn.go.com/players/web-player-bundle/next/embed/share.html#id=6344638737112&brand=marvel"
+                  width="640"
+                  height="360"
+                  scrolling="no"
+                  allowfullscreen
+                  frameborder="0"
+                >
+                </iframe
+                >`
+              </div>
+              <div class="rs-box11">
+                <iframe
+                  class="i10"
+                  src="https://assets.espn.go.com/players/web-player-bundle/next/embed/share.html#id=6344552535112&brand=marvel"
+                  width="640"
+                  height="360"
+                  scrolling="no"
+                  allowfullscreen
+                  frameborder="0"
+                >
+                </iframe
+                >`
+              </div>
+              <div class="rs-box12">
+                <iframe
+                  class="i11"
+                  src="https://assets.espn.go.com/players/web-player-bundle/next/embed/share.html#id=6342891368112&brand=marvel"
+                  width="640"
+                  height="360"
+                  scrolling="no"
+                  allowfullscreen
+                  frameborder="0"
+                >
+                </iframe
+                >`
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-------------------------- This part if for chaitali ------------------------------>
+      <section class="CB-background1">
+        <div>
+          <div>
+            <p>ON SALE 3/27</p>
+
+            <h2>NEW COMICS THIS WEEKS</h2>
+            <p>Check out the newest Marvel comics coming out this week!</p>
+            <button id="CB_btn1" class="fw-bold">RELEASE CALENDAR</button>
+          </div>
+        </div>
+        <div></div>
+      </section>
+
+      <section class="CB-background2">
+        <div class="container">
+          <div id="carouselExampleIndicators" class="carousel slide">
+            <div class="carousel-indicators">
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="0"
+                class="active"
+                aria-current="true"
+                aria-label="Slide 1"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="1"
+                aria-label="Slide 2"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="2"
+                aria-label="Slide 3"
+              ></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="CB_cardContainer p-3">
+                  <div class="card" style="width: 18rem">
+                    <img
+                      src="https://cdn.marvel.com/u/prod/marvel/i/mg/f/03/6596e12f09391/portrait_uncanny.jpg"
+                      class="card-img-top"
+                      alt="img"
+                    />
+                    <div class="card-body">
+                      <h4 class="card-title">Daredevil: Gang War (2023) #2</h4>
+                    </div>
+                    <p>2024</p>
+                  </div>
+
+                  <div class="card" style="width: 18rem">
+                    <img
+                      src="https://cdn.marvel.com/u/prod/marvel/i/mg/3/f0/6596e1192e54d/detail.jpg"
+                      class="card-img-top"
+                      alt="img"
+                    />
+                    <div class="card-body">
+                      <h4 class="card-title">Luke Cage: Gang War (2023) #3</h4>
+                    </div>
+                    <p>2024</p>
+                  </div>
+
+                  <div class="card" style="width: 18rem">
+                    <img
+                      src="https://cdn.marvel.com/u/prod/marvel/i/mg/9/03/6596e1176504a/detail.jpg"
+                      class="card-img-top"
+                      alt="img"
+                    />
+                    <div class="card-body">
+                      <h4 class="card-title">Miles Morales (2022) #15</h4>
+                    </div>
+                    <p>2024</p>
+                  </div>
+
+                  <div class="card" style="width: 18rem">
+                    <img
+                      src="https://cdn.marvel.com/u/prod/marvel/i/mg/9/50/65a93b0ef19c2/detail.jpg"
+                      class="card-img-top"
+                      alt="img"
+                    />
+                    <div class="card-body">
+                      <h4 class="card-title">Spider-Woman (2023) #3</h4>
+                    </div>
+                    <p>2024</p>
+                  </div>
+
+                  <div class="card" style="width: 18rem">
+                    <img
+                      src="https://cdn.marvel.com/u/prod/marvel/i/mg/f/a0/65b2c8df2f3ee/detail.jpg"
+                      class="card-img-top"
+                      alt="img"
+                    />
+                    <div class="card-body">
+                      <h4 class="card-title">
+                        Deadly Hands of Kung Fu:(2023) #2
+                      </h4>
+                    </div>
+                    <p>2024</p>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="CB_cardContainer p-3">
+                  <div class="card" style="width: 18rem">
+                    <img
+                      src="https://cdn.marvel.com/u/prod/marvel/i/mg/c/90/65f9a3a74c9aa/portrait_uncanny.jpg"
+                      class="card-img-top"
+                      alt="img"
+                    />
+                    <div class="card-body">
+                      <h4 class="card-title">Amazing Spider-Man (2022) #43</h4>
+                    </div>
+                    <p>2024</p>
+                  </div>
+
+                  <div class="card" style="width: 18rem">
+                    <img
+                      src="https://cdn.marvel.com/u/prod/marvel/i/mg/c/80/65b7df6b805ca/detail.jpg"
+                      class="card-img-top"
+                      alt="img"
+                    />
+                    <div class="card-body">
+                      <h4 class="card-title">Spider-Man (2022) #16</h4>
+                    </div>
+                    <p>2024</p>
+                  </div>
+
+                  <div class="card" style="width: 18rem">
+                    <img
+                      src="https://cdn.marvel.com/u/prod/marvel/i/mg/0/04/65cccf978dca5/detail.jpg"
+                      class="card-img-top"
+                      alt="img"
+                    />
+                    <div class="card-body">
+                      <h4 class="card-title">Spider-Woman (2023) #4</h4>
+                    </div>
+                    <p>2024</p>
+                  </div>
+
+                  <div class="card" style="width: 18rem">
+                    <img
+                      src="https://cdn.marvel.com/u/prod/marvel/i/mg/6/90/65ca4d6b38185/detail.jpg"
+                      class="card-img-top"
+                      alt="img"
+                    />
+                    <div class="card-body">
+                      <h4 class="card-title">Amazing Spider-Man (2022) #44</h4>
+                    </div>
+                    <p>2024</p>
+                  </div>
+
+                  <div class="card" style="width: 18rem">
+                    <img
+                      src="https://cdn.marvel.com/u/prod/marvel/i/mg/6/60/65b7d7b21328d/detail.jpg"
+                      class="card-img-top"
+                      alt="img"
+                    />
+                    <div class="card-body">
+                      <h4 class="card-title">Daredevil: Gang War (2023) #3</h4>
+                    </div>
+                    <p>2024</p>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="CB_cardContainer p-3">
+                  <div class="card" style="width: 18rem">
+                    <img
+                      src="https://cdn.marvel.com/u/prod/marvel/i/mg/3/f0/6596e209af427/detail.jpg"
+                      class="card-img-top"
+                      alt="img"
+                    />
+                    <div class="card-body">
+                      <h4 class="card-title">ORIGINAL X-MEN (2023) #1</h4>
+                    </div>
+                    <p>2024</p>
+                  </div>
+
+                  <div class="card" style="width: 18rem">
+                    <img
+                      src="https://cdn.marvel.com/u/prod/marvel/i/mg/9/80/657a24de3f3a8/detail.jpg"
+                      class="card-img-top"
+                      alt="img"
+                    />
+                    <div class="card-body">
+                      <h4 class="card-title">G.O.D.S. (2023) #3</h4>
+                    </div>
+                    <p>2024</p>
+                  </div>
+
+                  <div class="card" style="width: 18rem">
+                    <img
+                      src="https://cdn.marvel.com/u/prod/marvel/i/mg/6/e0/6596e1d6da356/detail.jpg"
+                      class="card-img-top"
+                      alt="img"
+                    />
+                    <div class="card-body">
+                      <h4 class="card-title">Uncanny Spider-Man (2023) #5</h4>
+                    </div>
+                    <p>2023</p>
+                  </div>
+
+                  <div class="card" style="width: 18rem">
+                    <img
+                      src="https://cdn.marvel.com/u/prod/marvel/i/mg/6/90/6596e22c1f26c/detail.jpg"
+                      class="card-img-top"
+                      alt="img"
+                    />
+                    <div class="card-body">
+                      <h4 class="card-title">Astonishing Iceman (2023) #5</h4>
+                    </div>
+                    <p>2023</p>
+                  </div>
+
+                  <div class="card" style="width: 18rem">
+                    <img
+                      src="https://cdn.marvel.com/u/prod/marvel/i/mg/c/90/65f9a3a74c9aa/portrait_uncanny.jpg"
+                      class="card-img-top"
+                      alt="img"
+                    />
+                    <div class="card-body">
+                      <h4 class="card-title">Uncanny Avengers (2023) #5</h4>
+                    </div>
+                    <p>2023</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-------------------------- This part if for Vishal ------------------------------>
+    <footer>
+      <section class="bg-black">
+        <div class="container px-0">
+          <div class="vkbox d-md-flex bg-black" id="vk-1">
+            <div style="flex-basis: 50%">
+              <img src="./images/MvV.png" alt="..." style="width: 100%" />
+            </div>
+            <div
+              class="text-center d-flex justify-content-center align-items-center"
+              style="flex-basis: 50%"
+            >
+              <div class="">
+                <h2
+                  class="fw-light pb-3 fs-4 text-danger"
+                  style="letter-spacing: 3px; margin-top: 20px"
+                >
+                  MOVIEVERSE INSIDER
+                </h2>
+                <h3
+                  class="text-white fs-1 fw-bolder"
+                  style="letter-spacing: 1px"
+                >
+                  Watch, Earn, Redeem!
+                </h3>
+                <p
+                  class="text-white fs-5 fw-light"
+                  style="letter-spacing: 0.5px"
+                >
+                  Get rewarded for doing what you already do as a &nbsp;fan.
+                </p>
+                <button type="button" class="btn btn-danger">JOIN NOW</button>
+                <p class="text-white fs-6 fw-light mt-5">
+                  Terms And Conditions Apply
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section
+        style="background-color: #151515; padding-top: 6%; padding-bottom: 6%"
+      >
+        <div class="container" style="background-color: #151515">
+          <div class="vkbox2 text-white row pt-3">
+            <div
+              class="col-lg-2 p-3 col-sm-4 rounded d-sm-flex justify-content-center align-item"
+            >
+              <img
+                src="./images/logom.png"
+                alt=""
+                class="rounded"
+                style="display: block; margin: auto"
+              />
+            </div>
+            <div
+              class="p-2 col-lg-4 col-sm-8 d-flex justify-content-between align-items-center px-3"
+            >
+              <div class="text-white fw-bold fs-6">
+                <p class="m-1 f_l">ABOUT MOVIEVERSE</p>
+                <p class="m-1 f_l">HELP/FAQS</p>
+                <p class="m-1 f_l">CAREERS</p>
+                <p class="m-1 f_l">INTERNSHIPS</p>
+              </div>
+              <div class="text-white fs-6" style="font-weight: 400">
+                <p class="m-1 f_l">ADVERTISING</p>
+                <p class="m-1 f_l">DISNEY+</p>
+                <p class="m-1 f_l">MOVIEVERSE.COM</p>
+                <p class="m-1 f_l">REDEEM DIGITAL COMIC</p>
+              </div>
+            </div>
+            <div
+              class="p-2 col-lg-3 col-sm-12 d-flex justify-content-between align-items-center align-content-center"
+            >
+              <div>
+                <p
+                  class="p-3 fw-bolder fs-6 m-1 f_l"
+                  style="letter-spacing: 0.5px"
+                >
+                  MOVIEVERSE INSIDER
+                </p>
+                <p class="p-1 px-2 m-1" style="color: gray">
+                  Get Rewarded for Being a Marvel Fan
+                </p>
+              </div>
+              <div>
+                <p
+                  class="px-2 fw-bolder fs-6 m-1 f_l"
+                  style="letter-spacing: 0.5px"
+                >
+                  MOVIE UNLIMITED
+                </p>
+                <p class="p-1 px-2 m-1" style="color: gray">
+                  Access over 30,000+ digital comics
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-3 col-sm-12 p-4">
+              <p
+                class="fw-bolder fs-6 mt-5 m-1 f_l mb-2"
+                style="letter-spacing: 1px"
+              >
+                FOLLOW MOVIEVERSE
+              </p>
+              <div
+                class="d-flex gap-5 align-items-center flex-wrap align-content-center"
+              >
+                <span>
+                  <i
+                    class="fa-brands fa-square-facebook"
+                    style="color: #737785"
+                  ></i>
+                </span>
+                <span>
+                  <i class="fa-brands fa-x-twitter" style="color: #737785"></i
+                ></span>
+                <span
+                  ><i class="fa-brands fa-x-twitter" style="color: #737785"></i
+                ></span>
+                <span
+                  ><i
+                    class="fa-brands fa-square-instagram"
+                    style="color: #737785"
+                  ></i
+                ></span>
+                <span
+                  ><i class="fa-brands fa-tumblr" style="color: #737785"></i
+                ></span>
+                <span
+                  ><i class="fa-brands fa-youtube" style="color: #737785"></i
+                ></span>
+                <span
+                  ><i
+                    class="fa-brands fa-square-snapchat"
+                    style="color: #737785"
+                  ></i
+                ></span>
+                <span
+                  ><i class="fa-brands fa-pinterest" style="color: #737785"></i
+                ></span>
+                <span>
+                  <i class="fa fa-snapchat" aria-hidden="true"></i>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section style="background-color: #151515; padding: 20px">
+        <div class="container">
+          <div
+            class="lastfooter d-flex gap-4 justify-content-center align-items-center flex-wrap"
+            style="color: grey; background-color: #151515"
+          >
+            <span class="f_l">Terms of Use</span>
+            <span class="f_l">Privacy Policy</span>
+            <span class="f_l">Addendum to the Global Privacy Policy</span>
+            <span class="f_l">Interest-Based Ads</span>
+            <span class="f_l">License Agreement@2024</span>
+          </div>
+        </div>
+      </section>
+    </footer>
+
+    <!-------------------------- Part Vishal End------------------------------>
+     
+  </body>
+</html>
